@@ -1,0 +1,128 @@
+.textbook {
+  background-color: #fff;
+  text-align: center;
+  padding: 30px 0;
+  margin: 0 auto;
+}
+
+.textbook__title {
+  margin-bottom: 10px;
+}
+
+.textbook__wrapper {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-items: center;
+}
+
+.textbook__lvls {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.lvl__card {
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(164,18,104,1) 57%, rgba(245,255,0,1) 100%);
+  font-family: 'Roboto Mono', monospace;
+  border-radius: 15px;
+  width: 170px;
+  height: 50px;
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  cursor: pointer;
+  opacity: 30%;
+  transition: all 0.2s;
+  margin-top: 30px;
+}
+
+.lvl__card:hover, .picked {
+  opacity: 100%;
+}
+
+.lvl__card--left {
+  text-align: center;
+  padding-left: 10px;
+}
+
+.lvl__card--right {
+  background-color: black;
+  color: #fff;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  text-align: center;
+  line-height: 50px;
+  width: 30%;
+}
+
+.textbook__pagination {
+  margin: 20px auto;
+}
+
+.pagination__list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+
+}
+
+.pagination__btn {
+  color: rgb(0, 0, 0);
+  border: 3px rgb(92, 92, 92) solid;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 24px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.textbook__words {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px 20px;
+  margin-top: 30px;
+}
+
+.words__card {
+  display: flex;
+  flex-direction: row;
+  width: 48%;
+  gap: 15px;
+  border-radius: 15px;
+  border: 3px #000 solid;
+}
+
+.word__card--right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  padding: 10px;
+}
+
+.word__title {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.word__translate {
+  color: rgb(92, 92, 92);
+}
+
+.word__img {
+  width: 40%;
+  object-fit: cover;
+}
